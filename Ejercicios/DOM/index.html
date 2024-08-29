@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html.lang = "es"
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width-devide-width, initial-scale-1.0" />
+    <title> DOM JS</title>
+
+    <style> 
+        body {
+            background-color: #C8A1E0;
+            color: black;
+            margin: 6rem;
+        }
+        .parrafo1 {
+            font-size: 25px;
+            color: black;
+            font-weight: bold;
+        }
+        button:hover {
+            padding: 3rem;
+            border-radius: 10rem;
+            font-size: 20px;
+            background-color: #9DBDFF;
+        }
+    </style>
+</head>
+<body> 
+    <header>
+        <h1> Hola soy KAESE</h1>
+        <p id="miParrafo" class="parrafo1">Por favor no oprima el boton! apenas estoy aprendiendo</p>
+    </header>
+    <section>
+        <button id="miBoton">Estas seguro?</button>
+    </section>
+
+    <script>
+        const boton = document.getElementById("miBoton");
+        const parrafo = document.getElementById("miParrafo");
+        const texto = " y me gusta el arroz con pollo :v"
+        boton.addEventListener("click", function () { 
+            parrafo.innerHTML = "Mi nombre es Kim" + texto
+
+            parrafo.style.color = "#000000"
+            parrafo.style.fontSize = "30px"
+        });
+    </script>
+</body>
+</html>
